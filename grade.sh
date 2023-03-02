@@ -34,8 +34,8 @@ if [[ -f ListExamples.java ]]
                         echo "All tests have passed"
 
                     else
-                        grep "Tests run:" testResults.txt > grepResults.txt
-                        cat grepResults.txt
+                        cat testResults.txt
+                        echo "One or more tests failed"
                 fi
             else
                 echo "Compile error"
